@@ -41,6 +41,7 @@ export class Main {
   init() {
     // wx.offTouchStart();
     // wx.offTouchEnd();
+    document.getElementById("beforeInfo").style.display = 'none';
     this.dataStore
       .put("mainMenu", MainMenu)
       .put("rankMenu", RankMenu)
