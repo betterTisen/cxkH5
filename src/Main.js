@@ -89,20 +89,20 @@ export class Main {
       } else {
         // 如果游戏正在进行
         // 触摸跳跃按钮
-        // if (this.dataStore.get("jumpBtn").check(e)) {
-        //   this.dataStore.get("jumpBtn").tapStart();
-        // }
+        if (this.dataStore.get("jumpBtn").check(e)) {
+          this.dataStore.get("jumpBtn").tapStart();
+        }
       }
     });
 
-    // this.canvas.addEventListener("mouseup", e => {
-    //   if (!this.dataStore.isGameOver) {
-    //     // 触摸跳跃按钮
-    //     if (this.dataStore.get("jumpBtn").check(e)) {
-    //       this.dataStore.get("jumpBtn").tapEnd();
-    //     }
-    //   }
-    // });
+    this.canvas.addEventListener("mouseup", e => {
+      if (!this.dataStore.isGameOver) {
+        // 触摸跳跃按钮
+        if (this.dataStore.get("jumpBtn").check(e)) {
+          this.dataStore.get("jumpBtn").tapEnd();
+        }
+      }
+    });
 
     window.addEventListener("keydown", e => {
       if (e.code === "Space" && !this.dataStore.isGameOver && !this.dataStore.isMainMenu && this.dataStore.keyState) {

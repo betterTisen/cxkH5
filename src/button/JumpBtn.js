@@ -4,8 +4,8 @@ import { DataStore } from "../base/DataStore.js";
 export class JumpBtn extends Button {
   constructor() {
     const image = Button.getImage("jumpBtn");
-    super(image, 0, 0, 0, 0, 0, 0, 0, 0);
-    // super(image, 0, 0, image.width, image.height, 35, DataStore.getInstance().canvas.height - 120, image.width / 6, image.height / 6);
+    // super(image, 0, 0, 0, 0, 0, 0, 0, 0);
+    super(image, 0, 0, image.width, image.height, 35, DataStore.getInstance().canvas.height - 120, image.width / 6, image.height / 6);
   }
 
   tapStart() {
