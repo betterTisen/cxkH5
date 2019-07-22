@@ -106,13 +106,14 @@ export class Main {
     // });
 
     window.addEventListener("keydown", e => {
-      if (e.code === "Space" && !this.dataStore.isGameOver && !this.dataStore.isMainMenu && this.dataStore.keyState) {
+      if (e.code === "KeyC" && !this.dataStore.isGameOver && !this.dataStore.isMainMenu && this.dataStore.keyState) {
         this.dataStore.get("jumpBtn").tapStart();
       }
       this.dataStore.keyState = false;
+      console.log(e);
     });
     window.addEventListener("keyup", e => {
-      if (e.code === "Space" && !this.dataStore.isGameOver && !this.dataStore.isMainMenu) {
+      if (e.code === "KeyC" && !this.dataStore.isGameOver && !this.dataStore.isMainMenu) {
         this.dataStore.get("jumpBtn").tapEnd();
       }
       this.dataStore.keyState = true;
