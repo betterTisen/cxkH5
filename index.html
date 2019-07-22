@@ -6,7 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #c0c0c0;
+      height: 300px;
+      text-align: center;
+    }
+    .main {
+      padding: 35px 0 35px;
+      /* height: 400px; */
+      background: #3f4043;
+    }
+    .title {
+      margin: 30px auto 0;
+      font-size: 40px;
+    }
+    p {
+      margin: 25px auto;
+      width: 800px;
+      font-size: 22px;
+    }
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      width: 500px;
+      font-size: 20px;
+      text-align: left;
+      list-style: none;
+    }
+    ul li:first-child {
+      margin-bottom: 18px;
+      font-size: 26px;
+      color: red;
+    }
+  </style>
   <body>
-    1 123
+    <div class="main">
+      <canvas id="cxk" width="667" height="375"></canvas>
+    </div>
+    <div class="title">-鸡你快跑-</div>
+    <p>原本想做成微信小游戏，但是由于微信审核机制的原因，导致无法上线，先已改为pc游戏，排行榜功能无法使用。以demo的形式博君一笑。<span style="display: block;color: slateblue">(请使用最新版本的chrome打开)</span></p>
+    <ul>
+      <li>--------------- 操作tips：--------------</li>
+      <li>1. 点击空格键可进行跳跃</li>
+      <li>2. 长按空格键可跳的更高</li>
+      <li>3. 在空中按空格键可释放虚鲲龙卷，滑行一段距离</li>
+    </ul>
   </body>
+  <script type="module" src="./src/game.js"></script>
 </html>
