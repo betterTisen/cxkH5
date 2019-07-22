@@ -1,0 +1,136 @@
+* { 
+	margin:0;
+	padding:0;
+}
+html, body { 
+	height:100%;
+}
+body { 
+	background:#000;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	line-height:1em;
+	color:#afa196;
+	font-weight:bold;
+}
+
+img {
+	border:0; 
+	vertical-align:top; 
+	text-align:left;
+}
+
+ul, ol { 
+	list-style:none;
+}
+
+
+.wrapper { 
+	width:100%;
+	overflow:hidden;
+}
+
+
+/*==== GLOBAL =====*/
+#main {
+	width:1000px; 
+	margin:0 auto;
+	background:url('../404/main-bg.jpg') no-repeat left top;
+	font-size:.9375em;
+}
+
+#header {
+	height:190px;
+}
+#content {
+	min-height:457px;
+	height:auto !important;
+	height:457px;
+}
+#footer {
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#333;
+	font-size:12px;
+	text-align:center;
+	padding:10px 0 0 0;
+	font-weight:normal;
+}
+	#footer a {
+		color:#333;
+	}
+
+p {
+	margin-bottom:8px;
+	text-align:center;
+	padding:0 35px;
+	letter-spacing:-1px;
+}
+
+/*----- txt, links, lines, titles -----*/
+a {
+	color:#fff; 
+	outline:none;
+}
+a:hover{
+	text-decoration:none;
+}
+
+h1 {
+	font-size:50px;
+	line-height:1.1em;
+	font-weight:normal;
+	color:#afa196;
+	text-align:center;
+	padding:94px 0 0 0;
+	text-transform:capitalize;
+	font-variant:small-caps;
+	letter-spacing:-2px;
+}
+	h1 span {
+		display:block;
+		font-size:20px;
+		line-height:25px;
+		color:#6b635e;
+		font-variant:normal;
+		text-transform:none;
+		letter-spacing:0;
+		font-weight:bold;
+		letter-spacing:-1px;
+	}
+
+
+/*===== content =====*/
+#content .nav {
+	position:relative;
+	height:368px;
+}
+	#content .nav li {
+		position:absolute;
+		font-size:20px;
+		line-height:1.2em;
+		font-weight:bold;
+		text-transform:uppercase;
+		font-weight:normal;
+		letter-spacing:-1px;
+	}
+	#content .nav li.home {
+		left:451px;
+		top:270px;
+	}
+	#content .nav li.site_map {
+		left:120px;
+		top:60px;
+	}
+	#content .nav li.search {
+		right:90px;
+		top:60px;
+	}
+		#content .nav li a {
+			color:#d6cab9;
+			text-decoration:none;
+		}
+		#content .nav li a:hover {
+			text-decoration:underline;
+		}
+
+/*==========================================*/
