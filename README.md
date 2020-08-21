@@ -1,5 +1,7 @@
 ## 虚鲲快跑
 
+![](./bg.gif)
+
 一个跑酷的小游戏。[点击这里进入游戏界面](https://bettertisen.github.io/cxkH5/)
 
 *****
